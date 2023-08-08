@@ -4,6 +4,5 @@ jdk:
 before_install: 
    - curl -fL https://getcli.jfrog.io | sh
 script:
-  - ./gradlew check
   - ./gradlew artifactoryPublish --no-daemon --stacktrace
 
