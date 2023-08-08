@@ -1,9 +1,9 @@
+language: java
+install: skip
+
 os: linux
 dist: trusty
-language: java
-jdk:
-  - openjdk8
-before_install:
-  - chmod +x gradlew
+jdk: oraclejdk8
+
 script:
-  - ./gradlew check
+  - ./gradlew build --scan -s
