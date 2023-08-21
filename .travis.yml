@@ -2,7 +2,7 @@ language: ruby
 
 env:
   global:
-    - COVERITY_SCAN_TOKEN="nz_pEZXDI64ruAGtMI-l8w"
+    - COVERITY_SCAN_TOKEN="FMRIPPN6gYW3oAciFHJJ7A"
 
 addons:
   apt:
