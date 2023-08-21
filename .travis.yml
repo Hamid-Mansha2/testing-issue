@@ -1,4 +1,4 @@
-language: ruby
+language: generic
 
 env:
   global:
@@ -10,11 +10,9 @@ addons:
     - gnutls-bin
   coverity_scan:
     project:
-      name: "Hamid-Mansha2/testing-issue"
+      name: "Hamid-Mansha2/issue_test"
     notification_email: hamid.mansha@travis-ci.org
     build_command_prepend: "echo 'Preparing build...'"
     build_command: "echo 'Building...'"
     branch_pattern: coverity_scan
 
-script:
-  - echo "No tests to run."
