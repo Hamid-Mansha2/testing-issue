@@ -10,7 +10,7 @@ addons:
     - gnutls-bin
   coverity_scan:
     project:
-      name: "Hamid-Mansha2/testing_issue"
+      name: "Hamid-Mansha2/testing-issue"
     notification_email: hamid.mansha@travis-ci.org
     build_command_prepend: "echo 'Preparing build...'"
     build_command: "echo 'Building...'"
