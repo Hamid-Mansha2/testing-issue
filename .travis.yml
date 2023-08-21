@@ -1,8 +1,20 @@
-language: java
-jdk:
-  - openjdk8
-before_install: 
-   - curl -fL https://getcli.jfrog.io | sh
-script:
-  - ./gradlew artifactoryPublish --no-daemon --stacktrace
+language: ruby
 
+env:
+  global:
+    - COVERITY_SCAN_TOKEN="nz_pEZXDI64ruAGtMI-l8w"
+
+addons:
+  apt:
+    packages:
+    - gnutls-bin
+  coverity_scan:
+    project:
+      name: "Hamid-Mansha2/testing_issue"
+    notification_email: hamid.mansha@travis-ci.org
+    build_command_prepend: "echo 'Preparing build...'"
+    build_command: "echo 'Building...'"
+    branch_pattern: coverity_scan
+
+script:
+  - echo "No tests to run."
